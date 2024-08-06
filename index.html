@@ -1,0 +1,195 @@
+<html lang="en">
+ <head>
+     <title>Anya Molodtsova</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+     <style>
+  
+        ul.author {
+            list-style: none;
+            margin: .85rem 0;
+            font-variant-caps: normal;
+            text-align: center;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul.author li {
+            margin: 0;
+        }
+        ul.author li + li::before {
+            content: '\2219'; /* Bullet character */
+            padding: 0 5px;
+        }
+        .abstract {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center; /* Ensure text aligns to the left */
+        }
+        .abstract p {
+            margin: 0;
+            hyphens: auto;
+        }
+
+
+        dl {
+            margin: 0;
+            padding: 0;
+        }
+        dt {
+            margin-left: 20px;
+            position: relative;
+        }
+        dt::before {
+            content: '•';
+            position: absolute;
+            left: -20px;
+        }
+  
+         header h1 a, h4 a, h2.music-title a {
+         color: inherit; /* Use the color from the h1 */
+        text-decoration: none; /* Remove underline */
+    }
+    header h1 a:hover, header h1 a:visited, h4 a:hover, h4 a:visited, h2.music-title a:hover, h2.music-title a:visited {
+        color: inherit;
+        text-decoration: underline;
+         text-decoration-thickness: 0.15rem; /* Add underline on hover */
+    }
+
+
+    </style>
+     
+ </head>
+
+ <body>
+    
+    <header>
+        <h1><a href="index.html">Anya Molodtsova</a></h1>
+        <ul class="author">
+            <li>amolodts@oberlin.edu</li>
+            <li>molodtsovvva.github.io</li>
+            
+        </ul>
+
+    </header>
+
+    <div class="abstract">
+        <h2>Abstract</h2>
+        <p>I am a third-year student at <a href="https://www.oberlin.edu/" rel="external">Oberlin 
+            College</a>  studying Physics and Computer Science. I am interested in technology, fundamental science, and engineering,
+             and I am currently engaged in undergraduate research in Atomic Physics. Besides my commitment to my studies,
+              I like to play and produce music, create coding projects, and be involved in volunteer work, making a social impact. 
+         </p>
+    </div>
+     
+    <nav role="navigation" class="toc">
+        <h2>Contents</h2>
+        <ol>
+          <li><a href="#academics">Academics</a></li>
+          
+          <li><a href="#music">Music</a></li>
+          <li><a href="#coding-projects">Coding Projects</a>
+            <ol>
+                <li>
+                    <a href="#pedalboard-playground">"Pedalboard Playground"</a>
+                </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#volunteering">Volunteering</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+            <ol>
+        
+        </ol>
+</li>
+          
+          
+        </ol>
+      </nav>
+
+
+      <main>
+        <article>
+            <h2 id="academics">Academics</h2>
+            <p>I am currently pursuing a Bachelor’s degree in Physics and Computer Science at Oberlin College. 
+                I am a part of Prof. Jason <a href="https://www2.oberlin.edu/faculty/jstalnak/Research.html" rel="external">Stalnaker's lab</a>, 
+                working on undergraduate atomic physics research focusing 
+                on optical magnetometry based on atomic vapor cells. Within my research, I am developing the nuclear 
+                spin oscillator as a part of the Global Network of Optical Magnetometers for Exotic physics (GNOME). 
+                This network of optical magnetometers is looking for dark matter in the form of large-scale cosmological 
+                structures composed of ultra-light axion-like fields. You can find more information regarding the
+                 collaboration on the <a href="https://budker.uni-mainz.de/gnome/" rel="external">GNOME Website</a>. </p>
+                 <p>I am passionate about sharing knowledge. During the Fall Semester of 2023, I co-authored and co-taught the Experimental College <a href="https://www.oberlinexco.org/" rel ="external">(ExCo)</a> semester-long course "UkraineCo," providing students, 
+                    faculty, and members of the Oberlin community with a for-credit course focused on Ukrainian history and culture. I facilitated classes for groups ranging from 10 to 15 participants,
+                     engaging with readings, art, films, and guest speakers to provide context for Ukrainian history, heritage, and society.
+                      This way, I tried to address the issue of underrepresented Ukrainian studies in American college curricula.</p>
+
+            <h2 id="music" class="music-title"><a href="music.html">Music</a></h2>
+            <p>Over the past few years, I’ve been enjoying making and playing music. Even though I consider guitar to be my main instrument,
+                 I like picking up various other instruments.
+                 I enjoy collaborating with other musicians and have tons of fun jamming with my friends. </p>
+            <p>In addition, I am passionate about music recording and signal processing. I like learning about recording techniques
+                 and working with both analog and digital audio gear. 
+                I enjoy working with audio effects, which resulted in me creating a computer application simulating the usage of effect pedals 
+                (which you can find  <a href="#pedalboard-playground">here</a>!)</p>
+            <p>Moreover, I am keen on producing, mixing, mastering music, and working with different DAWs and digital 
+                modular synthesizers. </p>
+                <p>You can find and stream my music <a href="music.html">here</a>! All of it is written, performed, produced, mixed, and mastered by me.</p>
+
+            <h2 id="coding-projects">Coding Projects</h2>
+            I like using my computer science skills to come up with solutions for different technical problems and developing software 
+            I’m interested in. I use programming in the scope of my physics research, writing code mainly in Mathematica, IgorPro and 
+            LabView. There, I focus on data representation, building qualifying transforms, and also on automating the experiments. 
+            Outside research, I prefer coding in Rust and Python, but also have a vast familiarity with other programming languages.
+             As for now, my skillset also includes C#, Java, Racket, and Bash. 
+
+
+            <h4 id="pedalboard-playground"><a href="pedals.html">"Pedalboard Playground"</a></h4>
+            <p>Together with <a href="https://github.com/benthebenno" rel = "external">Ben Rappoport</a> and <a href="https://github.com/Sergey-ASP" rel = "external">Alec Sabol-Pulling</a>, I developed and programmed the "Pedalboard Playground" application 
+                for music learners and enthusiasts. The application enables users to construct custom virtual boards of effects pedals,
+                 applying diverse audio effects to uploaded sounds. "Pedalboard Playground" facilitates a learning environment, allowing 
+                 users to gain proficiency in digital pedal usage, laying the groundwork for understanding analog audio effects and getting
+                  familiar with the signal processing foundations. It provides a cost-effective sound-editing solution by offering 10 distinct
+                   digital audio effects, eliminating the need to purchase expensive analog effect pedals. You can find
+                    "Pedalboard Playground" <a href="pedals.html">here</a>!
+            </p>
+
+            <h2 id="volunteering">Volunteering</h2>
+            <p>Being born and raised in Kyiv, Ukraine, the unprovoked russian full-scale invasion of my country has upended 
+                the lives of many people I care about. For that reason, I focus a lot of my volunteering efforts on war relief.
+                 Over the past years, I’ve been active as a fundraiser, demonstration, and charity fair organizer in collaboration 
+                 with Ukrainisches Koordinationszentrum Dresden in Germany. I was a communicator for Ukrainian refugee children 
+                 at Elyria Westwood Middle School, acting as a liaison between the kids and the school counselors. I helped organize 
+                 a benefit Oberlin Conservatory artists concert, raising donations for the “Razom for Ukraine” charity foundation. 
+                 Additionally, I organized a vigil and a fundraiser on the college campus as a part of the “American Students Stand With Ukraine” 
+                 campaign, collectively raising over $8,000 in donations allocated for purchasing power generators. Over the month of 
+                 January 2024, I volunteered for the <a href="https://www.razomforukraine.org//" rel="external">"Razom for Ukraine"</a> non-profit organization, 
+                 focusing on creating BPMN notation for logistic processes for their further automation, more efficient resource distribution,
+                  and transparent responsibility allocation. 
+
+                </p>
+            
+
+            <h2 id="contact">Contact</h2>
+            <p>If you have any questions, please feel free to contact me! <br> <br></p>
+            <dl>
+                <dt>Email</dt>
+                <dd><a href="mailto:amolodts@oberlin.edu">amolodts@oberlin.edu</a></dd>
+                <!--<dt>Phone</dt>
+                <dd><a href="tel:+14405063189">+1 440 506 31 89</a></dd>-->
+                <dt>LinkedIn</dt>
+                <dd><a href="https://www.linkedin.com/in/anya-molodtsova-6363301b7/" rel="external">linkedin.com/in/anya-molodtsova-6363301b7</a></dd>
+                <dt>GitHub</dt>
+                <dd><a href="https://github.com/molodtsovvva" rel="external">github.com/molodtsovvva</a></dd>
+            </dl>
+            
+            
+            
+        </article>
+    </main>
+ </body>
+ </html>
