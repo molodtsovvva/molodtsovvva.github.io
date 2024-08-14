@@ -32,7 +32,16 @@
             margin: 0;
             hyphens: auto;
         }
+        .abstract p.authors {
+            margin-bottom: 1rem; /* Space below the authors line */
+        }
 
+        .abstract video {
+            display: block;
+            margin: 1.5rem auto; /* Center the video and add margin on top */
+            width: 90%; /* Make the video smaller */
+            max-width: 640px; /* Optional: max width to ensure it doesn't get too large */
+        }
 
         dl {
             margin: 0;
@@ -54,11 +63,42 @@
         }
         header h1 a:hover, header h1 a:visited  {
             color: inherit;
-            
             text-decoration: underline; 
             text-decoration-thickness: 0.15rem;/* Add underline 
             on hover */
         }
+
+
+        .download-button {
+    text-align: center; /* Center the button */
+    margin: 1.5rem 0; /* Space above and below the button */
+}
+
+.download-button a {
+    text-decoration: none; /* Remove underline */
+    color: var(--link-visited); /* Set text color */
+    font-size: 1rem; /* Adjust font size */
+    display: inline-flex; /* Align image and text */
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Background color */
+    padding: 0.5rem 0.75rem; /* Padding around text (less padding for narrower button) */
+    border: 1px solid #ccc; /* Border around the button */
+    border-radius: 5px; /* Rounded corners */
+    width: fit-content; /* Adjust width to fit the content */
+    max-width: 250px; /* Optional: set a max-width if needed */
+}
+
+.download-button a:hover {
+    background-color: #e0e0e0; /* Hover background color */
+}
+
+.download-icon {
+    width: 10%; /* Make the image 5% of its original size */
+    height: 10%; /* Maintain the aspect ratio */
+    margin-right: 5px;
+}
 
 
     </style>
@@ -69,19 +109,46 @@
     
     <header>
         <h1><a href="index.html">Anya Molodtsova</a></h1>
-        <h1><ul text-align =  center>Pedalboard Playground</ul></h1>
-        <h1><ul text-align =  center>Webpage under development :D</ul></h1>
         <ul class="author">
             <li>amolodts@oberlin.edu</li>
             <li>molodtsovvva.github.io</li>
-            
         </ul>
+
+        <!-- New centered text with same style -->
+        <h1 style="text-align: center;"><a href="https://github.com/molodtsovvva/pedalboard_playground" rel="external">Pedalboard Playground</a></h1>
 
     </header>
 
-   
+    <div class="abstract">
+        <p class="authors"><em>Authors:</em> <a href="https://github.com/molodtsovvva/" rel="external">Anya Molodtsova</a>,
+             <a href="https://github.com/benthebenno" rel="external">Ben Rappoport</a>, 
+             <a href="https://github.com/Sergey-ASP" rel="external">Alec Sabol-Pulling</a>.</p>
+
+        <p><a href="https://github.com/molodtsovvva/pedalboard_playground" rel="external">Pedalboard Playground</a> is an application for music learners and enthusiasts. 
+            It applies digital audio effects to uploaded sounds, 
+            simulating the usage of effects pedals. The program facilitates a learning environment, allowing users to gain proficiency in 
+            digital pedal usage, laying the groundwork for understanding analog audio effects and getting familiar with the signal processing
+             foundations. It provides a cost-effective sound-editing solution by offering 10 distinct digital audio effects, eliminating the need
+              to purchase expensive analog effect pedals.</p>
+              
+        <!-- Local video -->
+        <video controls>
+            <source src="videos/sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>You can find detailed instructions on the project repository page by following this <a href="https://github.com/molodtsovvva/pedalboard_playground" rel="external">GitHub repository link</a>. 
+            Alternatively, you can download the application archive below. To run the program, run the <b>PedalboardPlayground.exe</b> file.</p>
+            <p><em>Happy pedaling!</em></p>
+    </div>
 
 
+    <div class="download-button">
+        <a href="archive.zip" download>
+            <img src="download.png" alt="Download" class="download-icon">
+            Download Archive
+        </a>
+    </div>
 
  </body>
  </html>
